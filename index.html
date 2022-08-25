@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script src="script.js"></script>
+    <title>Javascript framework: JQuery</title>
+
+   
+</head>
+<body>
+
+<button id="show">Afficher</button>
+<button id="hide">Masquer</button>
+
+
+     <h1><em>JQUERY</em></h1>
+    <h2>SOMMAIRE</h2>
+    <ul>
+        <li>DEFINITION</li>
+        <li>HISTOIRE</li>
+        <li>CE QUE JQUERY PERMET DE FAIRE</li>
+        <li>INCLUSION DE JQUERY A UN PROJET</li>
+        <li>MANIPULATION DE JQUERY</li>
+        <li>AVANTAGES ET INCONVENIENTS</li>
+        <li>DEMO</li>
+    
+    </ul>
+
+<h2>I-DEFINITION</h2>
+
+<p>                  
+    jQuery est ce qu’on appelle une « librairie » ou une « bibliothèque » JavaScript. 
+    Le rôle d’une librairie, en informatique, est de simplifier l’utilisation d’un certain langage de programmation en fournissant un ensemble de codes déjà prêts à l’emploi.
+En l’occurrence, la librairie jQuery consiste en un ensemble de blocs de codes JavaScripts préconçus et qui vont être généralement enfermés dans des méthodes. 
+Il va donc nous suffire d’appeler ces méthodes pour exécuter le code qu’elles contiennent.
+</p>
+<p>syntaxe de base de jQuery: <strong> $( selector ). geste ()</strong></p>
+
+<h2>II-HISTOIRE</h2>
+
+<p>                  
+       La bibliothèque JavaScript libre jQuery est créée en 2006 par le développeur américain John Resig.
+     Alors étudiant à l'université, celui-ci l'a conçue comme un outil facilitant l'exploration d'un document HTML, 
+     via sa représentation objet, et permettant de surmonter les différences d'interprétation du code 
+     JavaScript par les navigateurs web4.La première version de JQuery est publiée en janvier 2006 ; la version stable 1.0, en août de la même année. 
+     <br>
+      Au départ, l'œuvre d'une seule personne, le projet devient celui d'une communauté de développeurs bénévoles. 
+    Il obtient aussi la reconnaissance de la Mozilla Foundation et de multinationales de l'informatique telles que IBM, 
+    Google et Microsoft5.  
+</p>
+
+<center><p class="image"><img src="https://th.bing.com/th/id/OIP.MXXWPAybQQOvuXcElqbaQgHaHa?pid=ImgDet&rs=1" alt=""></p></center>
+
+<h2>III-CE QUE JQUERY PERMET DE FAIRE</h2>
+
+<P>La bibliothèque jQuery permet, entre autres, de gagner en rapidité dans l'interaction avec le code HTML d'une page Web. Elle propose comme principales fonctionnalités : </P>
+<ul>
+<li>la manipulation du Document Object Model (DOM)</li> 
+<li>la gestion des événements (mouvements de souris, clics, etc.) et de l'AJAX (architecture informatique)</li>  
+<li>la création d'effets d'animation</li>
+<li>la manipulation des feuilles de style en cascade</li>
+<li>et bien d'autres encore.</li>
+</ul>
+
+<h2>IV-INCLUSION DE JQUERY</h2>
+
+                                                 <center><h3>1- les formats jQuery</h3></center>
+
+<p>                  
+        Tout d'abord, vous devrez inclure jQuery dans vos projets web. jQuery est disponible dans deux formats différents : le format de développement, et celui de production.
+
+    Le fichier développement est le plus gros, car il est annoté de manière à faciliter aux développeurs la compréhension du fonctionnement du code. 
+      Il y a des commentaires dans le code, des blancs utiles pour séparer les sections, et d'autres choses encore. Ces annotations, parsemées tout au long du code, vous aident à intégrer jQuery de façon intelligente, comme si vous aviez des conseils directement au sein du code. 
+      <br>
+      Le fichier contenant le format de développement de jQuery est simplement jquery-1.12.2.js(les nombres peuvent différer si vous n'utilisez pas la même version de jQuery).
+       <br><br>
+    Le format de production est plus petit, et donc plus rapide à utiliser sur vos pages web en ligne. 
+    
+      La plupart des annotations que l'on trouve dans le format de développement ont été retirées, puisque l'"utilisateur" final sera une page web, et non un être humain qui trouverait un intérêt à ces remarques additionnelles dans le code. 
+      Le fichier contenant le format de production de jQuery est jquery-1.12.2.min.js .
+      
+      La seule différence dans le nom du fichier est .min, qui indique que le contenu est compressé.
+</p>
+
+                                                    <center><h3>2-inclusion</h3></center>
+
+<p>
+           Pour inclure les fichiers jQuery dans votre code, vous disposez également de deux options (que le site soit en développement ou en production). 
+     La première est un scénario classique : il faut télécharger une copie du format de développement ou de production, et l'inclure dans les fichiers de votre projets
+
+     Mais je vous recommande plutôt la deuxième option, qui consiste à inclure jQuery via CDN (Content Delivery Network). Les fichiers jQuery sont hébergés sur des serveurs du monde entier, vous n'avez donc pas besoin de les mettre sur le vôtre ! 
+     Cela permet une meilleure performance, et qu'un utilisateur ait déjà le fichier dans sa mémoire locale ("en cache") après avoir visité un autre site qui utilise la même version de jQuery
+</p>
+
+<h2>V-MANIPULATION DE JQUERY</h2>
+
+                                    <center><h3>1-Télécharger jQuery</h3></center> 
+<p>                  
+        Il est important de télécharger cette bibliothèque JavaScript pour pouvoir l'utiliser, sinon ce serait impossible. Pour cette raison, la première étape consiste à le télécharger. 
+   C'est une étape très simple, car il suffit de passer à le site officiel de jQuery de le faire.
+
+    Il est recommandé de télécharger la version la plus récente disponible sur la page. Cela vous permettra de profiter des progrès qui ont été réalisés au cours de la dernière année. 
+    Par conséquent, vous aurez sûrement plus d'outils et de fonctions à utiliser dans la bibliothèque.
+</p>
+                                    <center><h3>2-Ajoutez jQuery à votre site Web</h3></center> 
+<p>                  
+         Maintenant pour utiliser jQuery dans votre page Web, vous devez l'intégrer. Pour cela, vous devez accéder au HTML de celui-ci et saisir ce qui suit pour la balise "Head":
+
+    En faisant cela, vous ajouterez toutes les informations dont dispose la bibliothèque à votre HTML. 
+    Maintenant, il ne s'agit plus que de commencer à l'utiliser pour tout ce que vous voulez faire. 
+    Tant que vous utilisez les raccourcis de programmation appropriés pour chaque action. Nous en expliquerons un peu plus ci-dessous.  
+</p>
+                       <center><h3>3-Apporter des modifications à votre site Web</h3></center> 
+<p>                  
+    En fonction de ce que vous allez faire, l'ordre que vous rédigerez variera. Cependant, dans la plupart des cas, vous devez commencer de la même manière. Pour exécuter des fonctions dans jQuery vous devez placer: <br>
+<br><br>
+    $.when($.ready).then(fonction () {…}) <br>
+    <br>
+    À l'intérieur de la fonction, vous devez écrire la fonction que vous souhaitez exécuter dans votre site Web. Par exemple, disons que vous souhaitez créer un bouton dans le corps de votre site Web. Dans ce cas, vous devez écrire ce qui suit:
+    <br><br>
+    $.when($.ready).then(fonction () {   <br>
+    <br>
+    $('# MyButton'). On ('click', function (e) { <br>
+    <br>
+    alert ("Ça marche !!"); <br>
+
+    <br>
+
+    }); <br>
+    
+    }); <br>
+    
+    Nous vous recommandons de quitter HTML chaque fois que vous effectuez une modification avec jQuery. Afin que vous puissiez vérifier de vos propres yeux que la fonction a été exécutée correctement. 
+    Au cas où cela n'aurait pas été fait, vérifiez que vous avez tout écrit dans le bon ordre.  
+</p>
+
+
+<h2>VI-AVANTAGE ET INCONVENIENT</h2>
+
+            <center><h3>1-Avantages</h3></center>
+<p>                  
+        Le principal avantage de jQuery est qu’il est beaucoup plus facile que ses concurrents. Vous pouvez ajouter des plugins facilement, ce qui se traduit par un gain substantiel de temps et d’efforts. 
+    En fait, l’une des principales raisons pour lesquelles Resig et son équipe ont créé jQuery était de gagner du temps (dans le monde du développement web, le temps compte beaucoup).
+
+    La licence open source de jQuery permet à la bibliothèque d’avoir toujours un support constant et rapide, publiant constamment des mises à jour. 
+    La communauté jQuery est active et extrêmement travailleuse.
+</p>
+              <center><h3>2-Inconvenients</h3></center>
+<p>                L’un des principaux inconvénients de jQuery est le grand nombre de versions publiées dans un court laps de temps. 
+    Peu importe si vous exécutez la dernière version de jQuery, vous devrez héberger la bibliothèque vous-même (et la mettre à jour constamment), ou télécharger la bibliothèque à partir de Google (attrayant, mais peut apporter des problèmes d’incompatibilité avec le code).
+
+
+    En plus du problème des versions, d’autres inconvénients que nous pouvons mentionner:
+    
+    jQuery est facile à installer et à apprendre, au départ. Mais ce n’est pas si facile si nous le comparons avec CSS
+          Si jQuery est mal implémenté en tant que Framework, l’environnement de développement peut devenir incontrôlable.
+</p>
+
+
+<h2>VII-DEMO</h2>
+
+
+
+</body>
+</html>
